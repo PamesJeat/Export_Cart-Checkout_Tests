@@ -52,7 +52,7 @@ fixture `Stress Test`
     //check it out
     .click(Selector('#root > div > div.page-content-wrapper > div > div > div > div.basket-content-component_basket-content-container__1j6Rc > div.basket-content-component_checkout-area__POgWx > div > div > div.summary-component_checkout__BOGfr > button'))
 
-    //be out guest
+    //be our guest
     .click(Selector('#root > div > div.page-content-wrapper > div > div > div > div.basket-content-component_basket-content-container__1j6Rc > div.basket-content-component_checkout-area__POgWx > div > div > div.sign-in-modal-component_sign-in-modal-container-wrapper__UahxF > div > div.modal-component-module_modal__2tFYw.modal-component-module_normal__lvnkl.modal-component-module_small__2Vhae.modal-component-module_slidedown__tzmxM.sign-in-modal-component_sign-in-modal-container__2ScDv > div.scrollbar-container.default.show-scroll.modal-component-module_scroll-container-no-footer__u-Zdb.ps > div.sign-in-modal-component_modal-content__2PFbR > button:nth-child(8)'))
 
     //name
@@ -82,13 +82,18 @@ fixture `Stress Test`
     .typeText('#root > div > div.page-content-wrapper > div > div > div > div.purchase-component_checkout-contents__2mxx9 > div.purchase-component_checkout-info__2uonT > div.card-component-module_card-component__1NA2E.card-component-module_card-radius__2eMqM.delivery-address-component_delivery-address-card__18eqQ.card-component-module_padding__51wm7.card-component-module_white__2avgM > div > div > div.address-form-component_postcode__3dAxr > div > div > input','35291')
 
     //tax
-    .click(Selector('#no > label > span'))
+    .wait(1000)
+    .click(Selector('#yes > label'))
+    .typeText('#root > div > div.page-content-wrapper > div > div > div > div.purchase-component_checkout-contents__2mxx9 > div.purchase-component_checkout-info__2uonT > div.card-component-module_card-component__1NA2E.card-component-module_card-radius__2eMqM.delivery-address-component_delivery-address-card__18eqQ.card-component-module_padding__51wm7.card-component-module_white__2avgM > div > div > div:nth-child(10) > div.text-component-module_text-component__LnRMg > div > input', '123')
+
+    //#root > div > div.page-content-wrapper > div > div > div > div.purchase-component_checkout-contents__2mxx9 > div.purchase-component_checkout-info__2uonT > div.card-component-module_card-component__1NA2E.card-component-module_card-radius__2eMqM.purchase-component_payment-type-card__3TYDh.card-component-module_padding__51wm7.card-component-module_white__2avgM > div.payment-type-component_payment-type-container__2CG1X > div.invoice-address-component_invoice-address-container__21SiR > div > div.checkbox-component-module_checkbox-component__38eED.checkbox-component-module_inline__4sQO1.invoice-address-component_delivery-checkbox__1-vCs > div > label > span > span
 
     //save
-    .wait(1000)
+    .wait(10000)
     .click(Selector('#root > div > div.page-content-wrapper > div > div > div > div.purchase-component_checkout-contents__2mxx9 > div.purchase-component_checkout-info__2uonT > div.card-component-module_card-component__1NA2E.card-component-module_card-radius__2eMqM.delivery-address-component_delivery-address-card__18eqQ.card-component-module_padding__51wm7.card-component-module_white__2avgM > button'))
-    .wait(1000)
-    .click(Selector('#root > div > div.page-content-wrapper > div > div > div > div.purchase-component_checkout-contents__2mxx9 > div.purchase-component_checkout-info__2uonT > div.card-component-module_card-component__1NA2E.card-component-module_card-radius__2eMqM.purchase-component_payment-type-card__3TYDh.card-component-module_padding__51wm7.card-component-module_white__2avgM > div.payment-type-component_payment-type-container__2CG1X > div.invoice-address-component_invoice-address-container__21SiR > div > div.checkbox-component-module_checkbox-component__38eED.checkbox-component-module_inline__4sQO1.invoice-address-component_delivery-checkbox__1-vCs > div > label > span > span'))
+    .wait(10000)
+    //.scrollIntoView(Selector('#root > div > div.page-content-wrapper > div > div > div > div.purchase-component_checkout-contents__2mxx9 > div.purchase-component_checkout-info__2uonT > div.card-component-module_card-component__1NA2E.card-component-module_card-radius__2eMqM.purchase-component_payment-type-card__3TYDh.card-component-module_padding__51wm7.card-component-module_white__2avgM > div.payment-type-component_payment-type-container__2CG1X > div.invoice-address-component_invoice-address-container__21SiR > div > div.checkbox-component-module_checkbox-component__38eED.checkbox-component-module_inline__4sQO1.invoice-address-component_delivery-checkbox__1-vCs > div > label > span > span'))
+    //.click(Selector('#root > div > div.page-content-wrapper > div > div > div > div.purchase-component_checkout-contents__2mxx9 > div.purchase-component_checkout-info__2uonT > div.card-component-module_card-component__1NA2E.card-component-module_card-radius__2eMqM.purchase-component_payment-type-card__3TYDh.card-component-module_padding__51wm7.card-component-module_white__2avgM > div.payment-type-component_payment-type-container__2CG1X > div.invoice-address-component_invoice-address-container__21SiR > div > div.checkbox-component-module_checkbox-component__38eED.checkbox-component-module_inline__4sQO1.invoice-address-component_delivery-checkbox__1-vCs > div > label > span > span'))
 
     .wait(5000)
 
@@ -96,7 +101,7 @@ fixture `Stress Test`
     .wait(2000)
 
     //click accept terms
-    .scrollIntoView(Selector('#root > div > div.page-content-wrapper > div > div > div > div.purchase-component_checkout-contents__2mxx9 > div.purchase-component_checkout-info__2uonT > div.card-component-module_card-component__1NA2E.card-component-module_card-radius__2eMqM.purchase-component_payment-type-card__3TYDh.card-component-module_padding__51wm7.card-component-module_white__2avgM > div.purchase-component_payment-btn-area__31CK1 > div > div > label > span > span'))
+    //.scrollIntoView(Selector('#root > div > div.page-content-wrapper > div > div > div > div.purchase-component_checkout-contents__2mxx9 > div.purchase-component_checkout-info__2uonT > div.card-component-module_card-component__1NA2E.card-component-module_card-radius__2eMqM.purchase-component_payment-type-card__3TYDh.card-component-module_padding__51wm7.card-component-module_white__2avgM > div.purchase-component_payment-btn-area__31CK1 > div > div > label > span > span'))
     .wait(500)
     .click(Selector('#root > div > div.page-content-wrapper > div > div > div > div.purchase-component_checkout-contents__2mxx9 > div.purchase-component_checkout-info__2uonT > div.card-component-module_card-component__1NA2E.card-component-module_card-radius__2eMqM.purchase-component_payment-type-card__3TYDh.card-component-module_padding__51wm7.card-component-module_white__2avgM > div.purchase-component_payment-btn-area__31CK1 > div > div > label > span > span'))
     .wait(5000)
