@@ -5,14 +5,14 @@ var quan = '1'
 
 fixture `Stress Test`
 
-    .page `https://export-uat.rsdelivers.com/cart`
+    .page `https://export-uat.rsdelivers.com`
 
     .meta({author: 'James Elrick', creationDate: '10/05/2022'});
 
   test('Stress Test', async t => {
     
     await t
-    
+    .navigateTo('https://export-uat.rsdelivers.com/cart')
     .wait(1000)
     //cart stuffs
     .click(Selector('#root > div > div.page-content-wrapper > div > div > div > div.empty-basket-component_empty-basket-container__1PmWg > div.empty-basket-component_quick-add-card-container__3dn5v > div > div.empty-basket-component_buttons__1Tco3 > button:nth-child(1)'))
