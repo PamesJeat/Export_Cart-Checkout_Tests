@@ -13,7 +13,7 @@ fixture `Stress Test`
     
     await t
     .wait(1000)
-    //.click(Selector('#ensCloseBanner'))
+    .click(Selector('#ensCloseBanner'))
      //type 222-222 into search
      .typeText('#root > div > header > div.card-component-module_card-component__1NA2E.page-content.header-menu-component_header-card__3KF4p.card-component-module_padding__51wm7.card-component-module_white__2avgM > div > div.header-menu-component_nav-bar__1Ur-s.row > div > div.header-menu-component_search-container__2w18I > div > div > input', '222222')
      //click search
@@ -96,9 +96,9 @@ fixture `Stress Test`
     //#root > div > div.page-content-wrapper > div > div > div > div.purchase-component_checkout-contents__2mxx9 > div.purchase-component_checkout-info__2uonT > div.card-component-module_card-component__1NA2E.card-component-module_card-radius__2eMqM.purchase-component_payment-type-card__3TYDh.card-component-module_padding__51wm7.card-component-module_white__2avgM > div.payment-type-component_payment-type-container__2CG1X > div.invoice-address-component_invoice-address-container__21SiR > div > div.checkbox-component-module_checkbox-component__38eED.checkbox-component-module_inline__4sQO1.invoice-address-component_delivery-checkbox__1-vCs > div > label > span > span
 
     //save
-    .wait(20000)
+    .wait(1000)
     .click(Selector('#root > div > div.page-content-wrapper > div > div > div > div.purchase-component_checkout-contents__2mxx9 > div.purchase-component_checkout-info__2uonT > div.card-component-module_card-component__1NA2E.card-component-module_card-radius__2eMqM.delivery-address-component_delivery-address-card__18eqQ.card-component-module_padding__51wm7.card-component-module_white__2avgM > button'))
-    .wait(10000)
+    .wait(1000)
     //.scrollIntoView(Selector('#root > div > div.page-content-wrapper > div > div > div > div.purchase-component_checkout-contents__2mxx9 > div.purchase-component_checkout-info__2uonT > div.card-component-module_card-component__1NA2E.card-component-module_card-radius__2eMqM.purchase-component_payment-type-card__3TYDh.card-component-module_padding__51wm7.card-component-module_white__2avgM > div.payment-type-component_payment-type-container__2CG1X > div.invoice-address-component_invoice-address-container__21SiR > div > div.checkbox-component-module_checkbox-component__38eED.checkbox-component-module_inline__4sQO1.invoice-address-component_delivery-checkbox__1-vCs > div > label > span > span'))
     //.click(Selector('#root > div > div.page-content-wrapper > div > div > div > div.purchase-component_checkout-contents__2mxx9 > div.purchase-component_checkout-info__2uonT > div.card-component-module_card-component__1NA2E.card-component-module_card-radius__2eMqM.purchase-component_payment-type-card__3TYDh.card-component-module_padding__51wm7.card-component-module_white__2avgM > div.payment-type-component_payment-type-container__2CG1X > div.invoice-address-component_invoice-address-container__21SiR > div > div.checkbox-component-module_checkbox-component__38eED.checkbox-component-module_inline__4sQO1.invoice-address-component_delivery-checkbox__1-vCs > div > label > span > span'))
 
