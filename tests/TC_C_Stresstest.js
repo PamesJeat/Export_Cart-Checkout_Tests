@@ -54,8 +54,8 @@ fixture `Stress Test`
     .wait(5000)
     //select save
     .click(Selector('#root > div > div.page-content-wrapper > div > div > div > div.basket-content-component_basket-content-container__1j6Rc > div.modal-component-module_modal-component__2N4JX.delivery-modal-component_delivery-modal-container__3u4zW > div.modal-component-module_modal__2tFYw.modal-component-module_normal__lvnkl.modal-component-module_fullscreen__3L_VI.delivery-modal-component_modal__1DCMq.delivery-modal-component_options-visible__7J8Uj > div.scrollbar-container.default.show-scroll.modal-component-module_scroll-container-no-footer__u-Zdb.ps > div.delivery-modal-component_modal-contents__2WM7H > div.delivery-modal-component_options__2PZwI > button'))
+    .wait(10000)
     .wait(5000)
-
     //check it out
                      //#root > div > div.page-content-wrapper > div > div > div > div.basket-content-component_basket-content-container__1j6Rc > div.basket-content-component_checkout-area__POgWx > div > div > div.summary-component_checkout__BOGfr > button
     .click(Selector('#root > div > div.page-content-wrapper > div > div > div > div.basket-content-component_basket-content-container__1j6Rc > div.basket-content-component_checkout-area__POgWx > div > div > div.summary-component_checkout__BOGfr > button'))
