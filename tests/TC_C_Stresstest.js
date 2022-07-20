@@ -5,7 +5,7 @@ var quan = '1'
 
 fixture `Stress Test`
 
-    .page `https://export-uat.rsdelivers.com`
+    .page `https://export-uat.rsdelivers.com/cart`
 
     .meta({author: 'James Elrick', creationDate: '10/05/2022'});
 
@@ -14,12 +14,12 @@ fixture `Stress Test`
     await t
     .wait(1000)
     .click(Selector('#ensCloseBanner'))
-     //type 222-222 into search
-     .typeText('#root > div > header > div.card-component-module_card-component__1NA2E.page-content.header-menu-component_header-card__3KF4p.card-component-module_padding__51wm7.card-component-module_white__2avgM > div > div.header-menu-component_nav-bar__1Ur-s.row > div > div.header-menu-component_search-container__2w18I > div > div > input', '222222')
-     //click search
-     .wait(1000)
-     .click(Selector('#root > div > header > div.card-component-module_card-component__1NA2E.page-content.header-menu-component_header-card__3KF4p.card-component-module_padding__51wm7.card-component-module_white__2avgM > div > div.header-menu-component_nav-bar__1Ur-s.row > div > div.header-menu-component_search-container__2w18I > button.button-component-module_button-component__2jBKH.button-component-module_primary__1qgaJ.button-component-module_default__2A30a.button-component-module_icon-button__1V2c6.header-menu-component_search-button__2DV1A'))
-    .navigateTo('https://export-uat.rsdelivers.com/cart')
+    //  //type 222-222 into search
+    //  .typeText('#root > div > header > div.card-component-module_card-component__1NA2E.page-content.header-menu-component_header-card__3KF4p.card-component-module_padding__51wm7.card-component-module_white__2avgM > div > div.header-menu-component_nav-bar__1Ur-s.row > div > div.header-menu-component_search-container__2w18I > div > div > input', '222222')
+    //  //click search
+    //  .wait(1000)
+    //  .click(Selector('#root > div > header > div.card-component-module_card-component__1NA2E.page-content.header-menu-component_header-card__3KF4p.card-component-module_padding__51wm7.card-component-module_white__2avgM > div > div.header-menu-component_nav-bar__1Ur-s.row > div > div.header-menu-component_search-container__2w18I > button.button-component-module_button-component__2jBKH.button-component-module_primary__1qgaJ.button-component-module_default__2A30a.button-component-module_icon-button__1V2c6.header-menu-component_search-button__2DV1A'))
+    // .navigateTo('https://export-uat.rsdelivers.com/cart')
     .wait(1000)
     //cart stuffs
     .click(Selector('#root > div > div.page-content-wrapper > div > div > div > div.empty-basket-component_empty-basket-container__1PmWg > div.empty-basket-component_quick-add-card-container__3dn5v > div > div.empty-basket-component_buttons__1Tco3 > button:nth-child(1)'))
