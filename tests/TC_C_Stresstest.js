@@ -3,6 +3,8 @@ import { Selector } from 'testcafe';
 var art = '222222'
 var quan = '1'
 
+var capabilities = {"browserstack.networkLogs" : "true","browserstack.networkLogsOptions": {"captureContent": "true"}}
+
 fixture `Stress Test`
 
     .page `https://export-uat.rsdelivers.com/cart`
