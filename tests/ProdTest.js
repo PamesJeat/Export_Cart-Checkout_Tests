@@ -34,7 +34,7 @@ fixture `Stress Test`
 
     .wait(1000)
     //.click(Selector('#ensCloseBanner'))
-
+    .click(Selector('#root > div > div.page-content-wrapper > div > div > div > div.basket-header-component_basket-header-container__1xvm- > div.basket-header-component_button-group__1dIeD > button:nth-child(1)'))
     //cart stuffs
     .click(Selector('#root > div > div.page-content-wrapper > div > div > div > div.empty-basket-component_empty-basket-container__1PmWg > div.empty-basket-component_quick-add-card-container__3dn5v > div > div.empty-basket-component_buttons__1Tco3 > button:nth-child(1)'))
 
