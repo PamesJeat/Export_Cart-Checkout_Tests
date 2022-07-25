@@ -36,7 +36,7 @@ fixture `Stress Test`
     //.click(Selector('#ensCloseBanner'))
     // .click(Selector('#root > div > div.page-content-wrapper > div > div > div > div.basket-header-component_basket-header-container__1xvm- > div.basket-header-component_button-group__1dIeD > button:nth-child(1)'))
     //cart stuffs
-    //.click(Selector('#root > div > div.page-content-wrapper > div > div > div > div.empty-basket-component_empty-basket-container__1PmWg > div.empty-basket-component_quick-add-card-container__3dn5v > div > div.empty-basket-component_buttons__1Tco3 > button:nth-child(1)'))
+    .click(Selector('#root > div > div.page-content-wrapper > div > div > div > div.empty-basket-component_empty-basket-container__1PmWg > div.empty-basket-component_quick-add-card-container__3dn5v > div > div.empty-basket-component_buttons__1Tco3 > button:nth-child(1)'))
 
     .typeText('#root > div > div.page-content-wrapper > div > div > div.quick-order-component_quick-order-container__2L8bw > div > div.modal-component-module_modal__2tFYw.modal-component-module_sidebar__kphQw.modal-component-module_fullscreen__3L_VI.quick-order-component_add-items-container__3mM2a > div.scrollbar-container.default.show-scroll.modal-component-module_scroll-container-footer__3tYmT.ps > div.quick-order-component_modal-contents-add-by-stock__1A0R4 > div:nth-child(2) > div.text-component-module_text-component__LnRMg.quick-order-component_product-stock-no__1fN57 > div > input', `${art}`)
 
