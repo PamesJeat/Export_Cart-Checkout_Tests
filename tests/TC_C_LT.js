@@ -2,11 +2,11 @@ import { Selector } from 'testcafe';
 
 fixture `End to End`
 
-    .page `https://lv-uat.rsdelivers.com/cart`
+    .page `https://lt-uat.rsdelivers.com/cart`
 
     .meta({author: 'James Elrick', creationDate: '12/09/2022'});
 
-  test('Latvia Test', async t => {
+  test('Lituania Test', async t => {
     
     await t
 
@@ -70,10 +70,10 @@ fixture `End to End`
     .click(Selector('#root > div > div.page-content-wrapper > div > div > div > div.purchase-component_checkout-contents__2mxx9 > div.purchase-component_checkout-info__2uonT > div.card-component-module_card-component__1NA2E.card-component-module_card-radius__2eMqM.delivery-address-component_delivery-address-card__18eqQ.card-component-module_padding__51wm7.card-component-module_white__2avgM > div > div > div.dropdown-component-module_dropdown-component__nCBiT.dropdown-component-module_grey__2rhbe > div.dropdown-component-module_dropdown-wrapper___ub06 > div:nth-child(1) > div > div'))
     
     //.typeText('#root > div > div.page-content-wrapper > div > div > div.request-quote-component_request-quote-content__28kh1 > div.request-quote-component_request-quote-forms__uj4tE > div.card-component-module_card-component__1NA2E.card-component-module_card-radius__2eMqM.delivery-address-component_delivery-address-card__18eqQ.card-component-module_padding__51wm7.card-component-module_white__2avgM > div > div > div.dropdown-component-module_dropdown-component__nCBiT.address-form-component_dropdown-invalid__1GTrL.dropdown-component-module_grey__2rhbe > div.dropdown-component-module_dropdown-wrapper___ub06 > div:nth-child(1) > div > div > div > input', 'AI Anbār')
-    .click(Selector('#LV-1001'))
+    .click(Selector('#LT-1001'))
     .wait(2000)
     // zip
-    .typeText('#root > div > div.page-content-wrapper > div > div > div > div.purchase-component_checkout-contents__2mxx9 > div.purchase-component_checkout-info__2uonT > div.card-component-module_card-component__1NA2E.card-component-module_card-radius__2eMqM.delivery-address-component_delivery-address-card__18eqQ.card-component-module_padding__51wm7.card-component-module_white__2avgM > div > div > div.address-form-component_postcode__3dAxr > div > div > input', 'LV-1039')
+    .typeText('#root > div > div.page-content-wrapper > div > div > div > div.purchase-component_checkout-contents__2mxx9 > div.purchase-component_checkout-info__2uonT > div.card-component-module_card-component__1NA2E.card-component-module_card-radius__2eMqM.delivery-address-component_delivery-address-card__18eqQ.card-component-module_padding__51wm7.card-component-module_white__2avgM > div > div > div.address-form-component_postcode__3dAxr > div > div > input', 'LT-03201')
     // request
     //.wait(3000)
     .wait(1000)
